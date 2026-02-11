@@ -1,30 +1,49 @@
 body {
-  margin: 0; /*spazio attorno */
+  margin: 0; 
+  /* elimina lo spazio automatico attorno alla pagina */
+
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif; /* carattere */
-  background-color: #7b2e3a; /* colore vinaccio */
+  /* altezza minima pari allo schermo */
+
+  font-family: Arial, Helvetica, sans-serif;
+  /* definisce il font principale del sito */
+
+  background-color: #7b2e3a;
+  /* colore di sfondo vinaccia */
 }
 header h1 {
-  font-family: 'Playfair Display', serif; /* carattere */
-  font-size: 64px;          /* dimensione del testo*/
-  color: #e6c27a;           /* colore oro */
-  margin: 0;                /*spazio attorno */
-  letter-spacing: 2px;      /* carattere */
+  font-family: 'Playfair Display', serif;
+  /* font decorativo per il titolo */
+
+  font-size: 64px;
+  /* dimensione del titolo */
+
+  color: #e6c27a;
+  /* colore oro */
+
+  letter-spacing: 2px;
+  /* aumenta lo spazio tra le lettere */
+
   text-transform: uppercase;
+  /* rende il testo maiuscolo */
+
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+  /* aggiunge ombra al testo */
+}
+.sottotitolo {
+  font-size: 22px;
+  color: rgba(255,255,255,0.85);
+  margin-top: 10px;
+  letter-spacing: 1px;
   text-shadow: 0px 2px 8px rgba(0,0,0,0.4);
 }
- .sottotitolo {
-    font-size: 22px;
-   color: rgba(255,255,255,0.85);
-    margin-top: 10px;
-    letter-spacing: 1px;
-	text-shadow: 0px 2px 8px rgba(0,0,0,0.4);
-}
+/* definisce stile e leggibilità del sottotitolo */
 
 header.top {
   text-align: center;
   padding: 40px 20px 30px; /* spazio interno tra contenuto e bordo */
 }
+/* centra il contenuto e crea spazio interno */
 .menu {
   display: flex;
   justify-content: space-between; /* distribuisce lo spazio */
@@ -33,12 +52,13 @@ header.top {
   padding: 20px 40px;
   box-sizing: border-box;
 }
+/* crea un menu orizzontale distribuito uniformemente */
 .menu .btn {
   flex: 1;                 /* OGNI bottone prende spazio */
   text-align: center;      /* allineamento*/
   margin: 0 10px;          /* spazio tra i bottoni */
 }
-
+/* ogni pulsante occupa lo stesso spazio */
 
 
 .slider {
@@ -47,6 +67,7 @@ header.top {
   position: relative;
   overflow: hidden;
 }
+/* contenitore dello slider immagini */
 .slide {
   position: absolute;
   inset: 0;
@@ -56,10 +77,11 @@ header.top {
   opacity: 0;
   transition: opacity 1s ease;
 }
-
+/* immagini sovrapposte con effetto dissolvenza */
 .slide.attiva {
   opacity: 1; /* trasparenza visibile */
 }
+/* rende visibile la slide attiva */
 .box-form{
 	background-color: #7b1e3a;
 	width: 650px;
@@ -69,6 +91,8 @@ header.top {
 	text-align: center;
 	box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
+/* contenitore centrale del modulo */
+
 .box-form h1{
 	font-size: 38px;
 	color:black;
@@ -80,6 +104,7 @@ header.top {
 	margin: 10px 0;
 	width:85%;
 }
+/* stile dei campi di input */
 .box-form input[type="checkbox"]{
 	width: auto;
 	margin-right:10px;
@@ -99,7 +124,7 @@ header.top {
   margin: auto;
   padding: 40px;
 }
-
+/* contenitore principale centrato */
 h1 {
   font-weight:bold;
   text-align: center;
@@ -122,7 +147,7 @@ h1 {
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
-
+/* immagine principale con ombra */
 .btn {
     background-color: #d4af37;
     color: #8b5a2b;
@@ -134,6 +159,7 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
+/* stile dei pulsanti principali */
 .bottoni {
     display:flex;
     flex-direction:column;
@@ -256,6 +282,7 @@ h1 {
         opacity: 0.6;
     }
 }
+/* animazione verticale per attirare l’attenzione */
 html {
     scroll-behavior: smooth;
 }
@@ -307,7 +334,7 @@ html {
   padding: 50px;
   box-shadow: 0 0 20px rgba(0,0,0,0.08);
 }
-
+/* contenitore della sezione degustazione */
 .tasting-card h1 {
   text-align: center;
   font-size: 48px;
@@ -326,7 +353,7 @@ html {
   width: 100%;
   border-collapse: collapse;
 }
-
+/* struttura tabellare dei vini */
 .tasting-table th {
   font-size: 14px;
   text-transform: uppercase;
@@ -383,7 +410,7 @@ td {
   display: flex;
   gap: 40px;
   align-items: flex-start;
-
+/* affianca slider immagini e mappa */
   /* ALLINEAMENTO sotto STORIA → VINI */
   margin-left: 80px;   /* regola se serve */
   margin-right: 80px;
@@ -425,6 +452,7 @@ td {
   height: 100%;
   border: 0;
 }
+/* visualizzazione della mappa incorporata */
 .testo-sostenibilità{
 	 text-align: center;
     color: #ffffff;
@@ -473,7 +501,7 @@ td {
     transition: 0.3s;
     display: inline-block;
 }
-
+/* pulsante per scaricare il report di sostenibilità */
 .btn-download:hover {
     background-color: #f2d79a;
     transform: scale(1.05);
@@ -494,4 +522,5 @@ td {
     border: none;
     border-radius: 30px;
     cursor: pointer;
+
 }
