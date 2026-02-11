@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title> i tuoi dati </title>
+  <script type="text/javascript">
+  
+  function mostraMessaggio()
+  {
+ 	 //analizziamo i dati anagrafici
+ 	 valore_nome=document.forms["invia"]["nome"].value; 
+ 	 valore_cognome=document.forms["invia"]["cognome"].value; 
+	 valore_email=document.forms["invia"]["email"].value;
+  
+ 	 //persone
+	  k=invia.persone.selectedIndex;
+	  persone = invia.persone.options[k].value;
+	  //notti
+	  k=invia.notti.selectedIndex;
+	  notti = invia.notti.options[k].value;
+ 	 
+
+  	alloggio = "";
+	 if(invia.opzione1.checked)
+ 		alloggio=" Hotel";
+ 	 if(invia.opzione2.checked)
+  		alloggio=" Podere Collupino";
+	 if(invia.opzione3.checked)
+ 		 alloggio=" ristorante";
+		  if(invia.opzione4.checked)
+ 		 alloggio=" Tour e degustazioni";
+
+
+  
+   
+    //alert per scrittura dati finali
+  	 alert(
+  "Ciao " + valore_nome + " " + valore_cognome +
+  ", hai prenotato " + alloggio +
+  " per " + persone + " persona/e " + "per " + notti + "notte/i." +
+  "Ti abbiamo mandato un'email a " + valore_email +
+  " con tutte le informazioni."
+);
+   
+   }
+  </script>
+</head>
+<body>
+<div class="box-form">
+<B> I tuoi dati </B>
+<form name="invia">
+Inserisci il nome:<input type="text" name="nome"><br>
+Inserisci il cognome:<input type="text" name="cognome"><br>
+Inserisci la tua email:<input type="text" name="email"><br>
+Quante persone? 
+<select name="persone">
+<option value="2">2 persone</option>
+<option value="3">3 persone</option>
+<option value="4">4 persone</option>
+<option value="Altro">Altro</option>
+</select><br>
+Quante notti? 
+<select name="notti">
+<option value="1">1 notte</option>
+<option value="2">2 notti</option>
+<option value="3">3 notti</option>
+<option value="Altro">Altro</option>
+</select><br>
+Scegli l'opzione che desideri:
+<div class="opzioni">
+<input type= "checkbox" name="opzione1">Hotel</label><br>
+<input type= "checkbox" name="opzione2">Podere Collupino</label><br>
+<input type= "checkbox" name="opzione3">Ristorante</label>
+<input type= "checkbox" name="opzione4">Tour e degustazioni</label><br>
+ <br>
+<input type="button" value="Prenota" onclick="mostraMessaggio()" class="btn-prenota"> 
+</form>
+<a href="index.html" class="btn">⬅ Torna alla home</a>
+</body>
+</html>
+

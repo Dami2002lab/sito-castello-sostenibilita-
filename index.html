@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Castello Banfi</title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+ <header class="top">
+ <h1>Castello Banfi</h1>
+ 
+ <p class="sottotitolo">“Un luogo in cui storia, innovazione e passione per il vino raccontano il territorio di Montalcino.”</p>
+ 
+ <nav class="menu">
+ <a href="storia.html" class="btn">STORIA</a>
+ <a href="vini.html" class="btn">VINI</a>
+ <a href="sostenibilità.html" class="btn">SOSTENIBILITA</a>
+ <a href="soggiorno.html" class="btn">SOGGIORNA CON NOI</a>
+ </nav>
+ </header>
+
+
+  <section class="slider-mappa">
+
+  <div class="slider">
+    <img src="castellobanfi.jpg" class="slide attiva">
+    <img src="castellobanfi2.jpg" class="slide">
+    <img src="castellobanfi3.jpg" class="slide">
+    <img src="castellobanfi4.jpg" class="slide">
+  </div>
+
+  <div class="mappa">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494489.3909200982!2d9.091279393749987!3d42.979862099999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132975f95e71c333%3A0x5176d5ffcbba2076!2scastello%20banfi!5e0!3m2!1sit!2sit!4v1770136804589!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</section>
+
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+setInterval(() => {
+  slides[slideIndex].classList.remove("attiva");
+  slideIndex = (slideIndex + 1) % slides.length;
+  slides[slideIndex].classList.add("attiva");
+}, 4000);
+</script>
+</body>
+</html>

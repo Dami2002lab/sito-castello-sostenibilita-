@@ -1,0 +1,497 @@
+body {
+  margin: 0; /*spazio attorno */
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif; /* carattere */
+  background-color: #7b2e3a; /* colore vinaccio */
+}
+header h1 {
+  font-family: 'Playfair Display', serif; /* carattere */
+  font-size: 64px;          /* dimensione del testo*/
+  color: #e6c27a;           /* colore oro */
+  margin: 0;                /*spazio attorno */
+  letter-spacing: 2px;      /* carattere */
+  text-transform: uppercase;
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+}
+ .sottotitolo {
+    font-size: 22px;
+   color: rgba(255,255,255,0.85);
+    margin-top: 10px;
+    letter-spacing: 1px;
+	text-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+}
+
+header.top {
+  text-align: center;
+  padding: 40px 20px 30px; /* spazio interno tra contenuto e bordo */
+}
+.menu {
+  display: flex;
+  justify-content: space-between; /* distribuisce lo spazio */
+  align-items: center;
+  width: 100%;               /* larghezza: occupa tutta la larghezza del contenitore */ 
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.menu .btn {
+  flex: 1;                 /* OGNI bottone prende spazio */
+  text-align: center;      /* allineamento*/
+  margin: 0 10px;          /* spazio tra i bottoni */
+}
+
+
+
+.slider {
+  width: 100vw;        /* tutta la larghezza schermo */
+  height: 75vh;        /* altezza */
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* NON taglia più */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.attiva {
+  opacity: 1; /* trasparenza visibile */
+}
+.box-form{
+	background-color: #7b1e3a;
+	width: 650px;
+	margin: 80px auto;
+	padding: 40px;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+.box-form h1{
+	font-size: 38px;
+	color:black;
+}
+.box-form input[type="text"],
+.box-form select{
+	font-size: 20px;
+	padding:10px;
+	margin: 10px 0;
+	width:85%;
+}
+.box-form input[type="checkbox"]{
+	width: auto;
+	margin-right:10px;
+}
+.opzioni {
+	margin:20px 0;
+	font-size: 20px;
+}
+.opzioni label {
+	display: block;
+	margin:8px 0;
+}
+
+.container {
+  background-color:rgba(255,255,255,0.05);
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+h1 {
+  font-weight:bold;
+  text-align: center;
+  font-size: 56x;
+  color: #5c3a21;
+}
+
+.sottotitolo {
+  text-align: center;
+  color: #d4af37;
+  margin-bottom: 40px;
+  font-size: 56x !important;
+  font-weight: 600;
+}
+
+.hero {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn {
+    background-color: #d4af37;
+    color: #8b5a2b;
+    padding: 22px;
+    text-decoration: none;
+    border-radius: 14px;
+    display: block;
+    font-size: 22x;
+    text-align: center;
+    font-weight: bold;
+}
+.bottoni {
+    display:flex;
+    flex-direction:column;
+    gap: 25px;
+    width: 300px;
+    
+}
+
+.foto-soggiorno {
+	display:flex;
+	justify-content:center;
+	gap:20px;
+}
+.hero-soggiorno{
+	width: 550px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right:40px;
+	display:block;
+}
+.testo-soggiorno{
+	max-width: 900px;
+	margin:0 auto 25px auto;
+	font-size: 20px;
+	font-family: "Georgia",serif;
+	text-align:center;
+	color: #3a2a2a;
+	line-height: 1.7;
+}
+.testo-soggiorno + p{
+	max-width: 900px;
+	margin:0 auto 30px auto;
+	font-size: 18px;
+	text-align:center;
+	color: #4a3a3a;
+	line-height: 1.6;
+}
+.prenota{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+.prenota a {
+	color:#7a1f1f;
+	font-weight: bold;
+	text-decoration: none;
+	border-bottom:2px solid #7a1f1f;
+	padding-bottom:3px;
+}
+.prenota a:hover {
+	color: #a52a2a;
+	border-color: #a52a2a;
+}
+.testo-vini{
+	max-width: 900px;
+	margin:0 auto 25px auto;
+	font-size: 20px;
+	font-family: "Georgia",serif;
+	text-align:center;
+	color: #3a2a2a;
+	line-height: 1.7;
+}
+.testo-vini + p{
+	max-width: 900px;
+	margin:0 auto 30px auto;
+	font-size: 18px;
+	text-align:center;
+	color: #4a3a3a;
+	line-height: 1.6;
+}
+.testo-storia{
+	max-width: 900px;
+	margin:0 auto 25px auto;
+	font-size: 20px;
+	font-family: "Georgia",serif;
+	text-align:center;
+	color: #3a2a2a;
+	line-height: 1.7;
+}
+.testo-storia + p{
+	max-width: 900px;
+	margin:0 auto 30px auto;
+	font-size: 18px;
+	text-align:center;
+	color: #4a3a3a;
+	line-height: 1.6;
+}
+.img-storia {
+	display:block;
+	margin: 30px auto;
+	max-width: 800px;
+	width: 100%;
+}
+.btn-scopri {
+    display: inline-block;
+    text-align: center;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 25px;
+    animation: scendi 1.5s infinite;
+}
+
+.btn-scopri span {
+    display: block;
+    font-size: 22px;
+}
+
+@keyframes scendi {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(8px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.sottotitolopagine {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+	color: #f2e8d8;
+}
+.sezione-storia {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.testo-storia {
+    flex: 1;
+    text-align: justify;
+    color: #f5e6c8; /* colore chiaro sul vinaccio */
+}
+
+.foto-storia img {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+.prenota {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.prenota a {
+    color: #e6c27a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.prenota a:hover {
+    text-decoration: underline;
+}
+.tasting-card {
+  max-width: 1100px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+
+.tasting-card h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.tasting-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tasting-table th {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.tasting-table td {
+  padding: 15px 10px;
+  vertical-align: top;
+}
+.wine-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+    color: #6f6f6f;
+    margin-bottom: 10px;
+}
+.wine-name {
+	font-weight:bold;
+  color:#7b2e3a;
+  font-size: 18px;
+}
+td {
+	line-height: 1.5;
+	color:#444;
+	padding: 15px 10px;
+}
+.notes {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 6px;
+}
+
+.line {
+  border-bottom: 1px dotted #2b1b1b;
+  padding-bottom: 5px;
+}
+
+.score {
+  font-size: 18px;
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #2b1b1b;
+  font-weight: bold;
+}
+/* CONTENITORE FOTO + MAPPA */
+.slider-mappa {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+
+  /* ALLINEAMENTO sotto STORIA → VINI */
+  margin-left: 80px;   /* regola se serve */
+  margin-right: 80px;
+}
+
+/* FOTO SLIDER (GRANDE E QUADRATO) */
+.slider {
+  width: 900px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+/* IMMAGINI QUADRATE SENZA SCHIACCIARSI */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.slide.attiva {
+  opacity: 1;
+}
+
+/* MAPPA PIÙ PICCOLA DELLE FOTO */
+.mappa {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.mappa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.testo-sostenibilità{
+	 text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 40px 0 25px 0;
+}
+.img-ambientale {
+	display:block;
+	margin: 30px auto;
+	max-width: 800px;
+	width: 100%;
+}
+.img-sociale {
+	display:block;
+	margin: 30px auto;
+	max-width: 800px;
+	width: 100%;
+}
+.img-economica {
+	display:block;
+	margin: 30px auto;
+	max-width: 800px;
+	width: 100%;
+}
+.img-sostenibilità {
+	display:block;
+	margin: 30px auto;
+	max-width: 800px;
+	width: 100%;
+}
+.download-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn-download {
+    background-color: #e6c27a;   /* oro */
+    color: #4b1f2a;              /* vinaccia */
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-download:hover {
+    background-color: #f2d79a;
+    transform: scale(1.05);
+}
+.frase-finale {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.btn-prenota {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 20px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
